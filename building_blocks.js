@@ -35,17 +35,17 @@
 // unless it's divisible by 5, then print out 'buzz'
 // unless it's divisible by 3 and 5, then print out 'fizz buzz'
 
-function fizzBuzz(number) {
+// function fizzBuzz(number) {
 
-  if (number % 5 === 0 && number % 3 === 0) {
-    console.log('fizzBuzz');
-  } else if (number % 5 === 0) {
-    console.log('buzz');
-  } else if (number % 3 === 0) {
-    console.log('fizz');
-  } else {
-    console.log(number);
-  }
-}
+//   if (number % 5 === 0 && number % 3 === 0) {
+//     // console.log;
+//   } else if (number % 5 === 0) {
+//     console.log('buzz');
+//   } else if (number % 3 === 0) {
+//     console.log('fizz');
+//   } else {
+//     console.log(number);
+//   }
+// }
 
-fizzBuzz(15);
+// fizzBuzz(15);
