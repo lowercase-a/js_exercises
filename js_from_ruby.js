@@ -45,18 +45,66 @@
 // For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: 101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
 
 
-function arrayCombinations(numbers1, numbers2) {
-  var combinations = [];
-  numbers1.forEach(function(number1) {
-    numbers2.forEach(function(number2) {
-      // console.log(number1); // 1, 5, 10
-      // console.log(number2); // 100 , 500, 1000
-      // console.log(number1 + number2);
-      combinations.push(number1 + number2);
-    });
-  });
+// function arrayCombinations(numbers1, numbers2) {
+//   var combinations = [];
+//   numbers1.forEach(function(number1) {
+//     numbers2.forEach(function(number2) {
+//       // console.log(number1); // 1, 5, 10
+//       // console.log(number2); // 100 , 500, 1000
+//       // console.log(number1 + number2);
+//       combinations.push(number1 + number2);
+//     });
+//   });
+//   console.log(combinations);
+// }
 
-  console.log(combinations);
+// arrayCombinations([1,5,10], [100,500,1000]);
+
+
+// var numbers = [123,5,23,5];
+// var lookFor = 23;
+
+// for (var i = 0; i < numbers.length; i++) {
+//   if (numbers[i] == lookFor) {
+//     console.log(i);
+//   }
+// }
+
+// numbers.forEach(function(number) {
+//   if (number == lookFor) {
+
+//   }
+// })
+
+
+// var add = 12
+// var numbers = [5,6,8,23,55];
+// var newArray = [];
+// var added = false;
+// numbers.forEach(function(number) {
+//   if (number > add && added == false) {
+//     newArray.push(add);
+//     added = true;
+//   }
+//   newArray.push(number);
+// });
+
+
+// console.log(newArray);
+
+function higherOrLower(array, number) {
+  var middle = Math.floor(array.length / 2);
+  if (array[middle] > number) {
+    return 'lower';
+  } else {
+    return 'higher';
+  }
 }
 
-arrayCombinations([1,5,10], [100,500,1000]);
+
+console.log(higherOrLower([2, 7, 14, 16, 24], 7) === "lower");
+
+console.log(higherOrLower([2, 5, 7, 14, 16, 24], 7) == "lower")
+console.log(higherOrLower([2, 7, 14, 16, 24], 16) == "higher")
+console.log(higherOrLower([2, 5, 7, 14, 16, 24], 16) == "higher")
+// console.log(higherOrLower([2, 5, 7, 14, 16, 24], 12) == nil)
